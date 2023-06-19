@@ -1,0 +1,66 @@
+/*El siguiente codigo me sirve para ver la acntidad de box "imagenes que deso ver"*/
+html {
+  box-sizing: border-box;
+ }
+ /*Esta parte me ayuda a dar orden a las imagenes con antes o despues en todo el texto*/
+ *, *:before, *:after {
+  box-sizing: inherit;
+ }
+ /* El siguiente codigo me ayuda a dar tamaño y estilo del texto*/
+ body {
+  font: 1.2em/1.2 Helvetica, aria, sans-serif;
+  margin: 0 3%;
+ }
+ /*En h1 y h2   font-size , margin nos ayuda a mantener la medida de las letras*/
+ h1 {
+  font-size: 1.8em;
+  margin: .9em 0 0 0;
+ }
+ h2 {
+  font-size: 1.5em;
+  margin: 1.5em 0 0 0;
+ }
+ /* Aca comprendemos que nos ayuda a manejar el tamaño de la imagen*/
+ img {
+  max-width: 100%;
+ }
+ /*El background es el color del cuadro que maneja cada imagen,el broder es el del cuadro de la imagen,padding borde de cada cuadro*/
+ figure {
+  background: black;
+  border-radius: 5px;
+  color: white;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  text-align: center;
+ }
+ /* El font -seze que se maneja aqui hace referencia al texto en la parte de abajo*/
+ figcaption {
+  font-size: .8em;
+ }
+ @media screen and (min-width: 794px) {
+  body {
+  background: rgba(0,0,255,.2);
+  margin: 25px 6%;
+  }
+  /* En esta parte se usa float hacia la izquierda con un margin a la derecha y nos permite ubicar tres imagenes*/
+  figure {
+  float: left;
+  width: 45%;
+  margin-right: 4.5%;
+  }
+  /*En est parte hacemos uso del background para darle color al fondo de la página,el max-width nos ayuda a ubicar el texto si 
+  lo reducimos nos queda reducido de forma horizontal */
+ }
+ @media screen and (min-width: 1020px) {
+  body {
+  background: rgba(0,255,0,.2);
+  margin: 25px 10%;
+  max-width: 1130px;
+  }
+  /*Esta prte del código nos ayuda a dar un buen tamaño a las imagenes*/
+  figure {
+  width: 30%;
+  margin-right: 2.5%;
+  }
+ }
+ 
